@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: e-commerce 
+    database: iconic-data-poc
+    schema: dbt_demo
+    tables: 
+      - name: raw_order_payments
+      - name: raw_customers
+      - name: raw_geolocation
+      - name: raw_order_items
+      - name: raw_product_category_name_translation
+      - name: raw_products
+      - name: raw_sellers
+      - name: raw_orders
+
+#freshness: # default freshness
+#warn_after: {count: 12, period: hour}
+#error_after: {count: 24, period: hour}
